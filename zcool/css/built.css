@@ -1,0 +1,434 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body,html{
+  height:100%;
+  overflow:hidden
+}
+html, body, h1, li, p, ul {
+  margin: 0;
+  padding: 0;
+  font: 14px "微软雅黑"
+}
+a {
+  text-decoration: none;
+  display: block
+}
+li{
+  list-style:none
+}
+img{
+  display:block
+}
+/*头部*/
+.header{
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background: rgba(0,0,0,.8);
+  z-index: 5;
+}
+.headerContent{
+  width:980px;
+  height:100%;
+  margin:0 auto
+}
+.logo{
+  float: left;
+  margin: 16px 20px 0 0;
+}
+nav{
+  float:right;
+}
+.header nav ul:hover{
+  content: "";
+  display: block;
+  clear: both
+}
+.header nav ul li{
+  float: left;
+  width:90px;
+  line-height:60px;
+  text-align:center;
+}
+.header nav ul li.active{
+  background: #fc0
+}
+.header nav ul li:hover{
+  background: #fc0
+}
+.header nav ul li.active a{
+  color: #000
+}
+.header nav ul li:hover a{
+  color: #000
+}
+.header nav ul li a{
+  color: #fff
+}
+/*内容区*/
+.dot{
+  position: fixed;
+  top: 50%;
+  right: 1%;
+  z-index: 3;
+}
+.content .dot li{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid;
+  margin-top: 10px;
+}
+.active{
+  background: rgb(0,0,0);
+}
+.list{
+  position:absolute;
+  width:100%;
+  height:100%;
+  transition:1s top
+}
+/*首页*/
+.homePage{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background:url(../img/s1.jpg) no-repeat;
+  overflow:hidden;
+  margin-top: 60px;
+}
+.wenzi{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  margin:auto
+}
+.wenzi img{
+  background-size: 100%;
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-left:-545px;
+  margin-top:-260px;
+  transition:.5s opacity;
+}
+
+/*抽象派*/
+.abstractLi{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden
+}
+.abstract{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto
+}
+.aLeft{
+  width: 837px;
+  height: 551px;
+  margin-top: 40px;
+}
+.aLeft .aLeft_list{
+  width: 100%;
+  height: 100%;
+}
+.aLeft .aLeft_list li{
+  float: left;
+  margin-right: 20px;
+  text-align: center;
+  transition: 1s transform;
+  transform: translate3d(-1000px, -800px, -500px) rotateX(145deg)
+}
+.aLeft .aLeft_list li p {
+  margin: 20px 0;
+  font-size: 18px
+}
+.aLeft .aLeft_list li a{
+  margin-left: 80px;
+  background: #fc0;
+  width: 98px;
+  height: 30px;
+  background: url(../img/buy.jpg) no-repeat;
+  background-position: 50% 50%
+}
+.aText{
+  position: absolute;
+  top: 0;
+  right: -15%;
+  margin-top: 5%;
+  padding-right: 15px;
+  border-right: 2px solid;
+  transition: 1s opacity;
+  opacity: 0
+}
+.aText h1{
+  font-size: 34px;
+  color: #333;
+  font-weight: 100;
+  text-align: right
+}
+.aText p{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+  text-align: right
+}
+.aText a{
+  color: #333;
+  text-align: right
+}
+.aRight {
+  position: absolute;
+  right: -193px;
+  bottom: 0
+}
+
+/*人物油画*/
+.peopleLi{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden
+}
+.people{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto
+}
+.pLeft{
+  width: 837px;
+  height: 551px;
+  margin-top: 40px;
+}
+.pLeft .pLeft_list{
+  width: 100%;
+  height: 100%;
+}
+.pLeft .pLeft_list li{
+  float: left;
+  margin-right: 20px;
+  text-align: center;
+}
+.pLeft .pLeft_list li p{
+  margin: 20px 0;
+  font-size: 18px
+}
+.pLeft .pLeft_list li a{
+  margin-left: 80px;
+  background: #fc0;
+  width: 98px;
+  height: 30px;
+  background: url(../img/buy.jpg) no-repeat;
+  background-position: 50% 50%
+}
+.pText{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 5%;
+  padding-right: 15px;
+  border-right: 2px solid;
+}
+.pText h1{
+  font-size: 34px;
+  color: #333;
+  font-weight: 100;
+  text-align: right
+}
+.pText p{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+  text-align: right
+}
+.pText a{
+  color: #333;
+  text-align: right
+}
+.pRight{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  display: block;
+}
+
+/*绽放*/
+.bloomLi{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden
+}
+.bloom{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto
+}
+.bLeft{
+  width: 1000px;
+  height: 551px;
+  margin-top: 40px;
+  z-index: 1;
+}
+.bLeft .bLeft_list{
+  width: 100%;
+  height: 100%;
+}
+.bLeft .bLeft_list li{
+  float: left;
+  margin-right: 20px;
+  text-align: center;
+}
+.bLeft .bLeft_list li p{
+  margin: 20px 0;
+  font-size: 18px
+}
+.bLeft .bLeft_list li a{
+  margin-left: 80px;
+  background: #fc0;
+  width: 98px;
+  height: 30px;
+  background: url(../img/buy.jpg) no-repeat;
+  background-position: 50% 50%
+}
+.bText{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 5%;
+  padding-right: 15px;
+  border-right: 2px solid;
+}
+.bText h1{
+  font-size: 34px;
+  color: #333;
+  font-weight: 100;
+  text-align: right
+}
+.bText p{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+  text-align: right
+}
+.bText a{
+  color: #333;
+  text-align: right
+}
+.bRight{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  display: block;
+}
+
+/*植物景观*/
+.plantsLi{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden
+}
+.plants{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto
+}
+.plLeft{
+  width: 1000px;
+  height: 551px;
+  margin-top: 40px;
+  z-index: 1;
+}
+.plLeft .plLeft_list{
+  width: 100%;
+  height: 100%;
+}
+.plLeft .plLeft_list li{
+  float: left;
+  margin-right: 20px;
+  text-align: center;
+}
+.plLeft .plLeft_list li p{
+  margin: 20px 0;
+  font-size: 18px
+}
+.plLeft .plLeft_list li a{
+  margin-left: 80px;
+  background: #fc0;
+  width: 98px;
+  height: 30px;
+  background: url(../img/buy.jpg) no-repeat;
+  background-position: 50% 50%
+}
+.plText{
+  position: absolute;
+  top: 0;
+  right: 3%;
+  margin-top: 5%;
+  padding-right: 15px;
+  border-right: 2px solid;
+}
+.plText h1{
+  font-size: 34px;
+  color: #333;
+  font-weight: 100;
+  text-align: right
+}
+.plText p{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+  text-align: right
+}
+.plText a{
+  color: #333;
+  text-align: right
+}
+.plRight{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  display: block;
+}
+
+/*动画*/
+
+
+
+
